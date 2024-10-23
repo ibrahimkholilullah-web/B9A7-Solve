@@ -10,8 +10,8 @@
         "200 g basil leaf",
         "400 g mushroom"
       ],
-      "preparing_time": "30 min",
-      "calories": "320 calories"
+      "preparing_time": 30,
+      "calories": 320
     },
     {
       "recipe_id": 2,
@@ -26,8 +26,8 @@
         "2 tbsp soy sauce",
         "1 tbsp sesame oil"
       ],
-      "preparing_time": "25 min",
-      "calories": "280 calories"
+      "preparing_time": 25,
+      "calories": 280
     },
     {
       "recipe_id": 3,
@@ -41,8 +41,8 @@
         "1 cheese slice",
         "1 burger bun"
       ],
-      "preparing_time": "20 min",
-      "calories": "450 calories"
+      "preparing_time": 20,
+      "calories": 450
     },
     {
       "recipe_id": 4,
@@ -56,8 +56,8 @@
         "50 g parmesan cheese",
         "1 tsp black pepper"
       ],
-      "preparing_time": "15 min",
-      "calories": "400 calories"
+      "preparing_time": 15,
+      "calories": 400
     },
     {
       "recipe_id": 5,
@@ -71,8 +71,8 @@
         "1 tbsp honey",
         "Ice cubes"
       ],
-      "preparing_time": "10 min",
-      "calories": "150 calories"
+      "preparing_time": 10,
+      "calories": 150
     },
     {
       "recipe_id": 6,
@@ -86,8 +86,8 @@
         "3 eggs",
         "100 g flour"
       ],
-      "preparing_time": "40 min",
-      "calories": "450 calories"
+      "preparing_time": 40,
+      "calories": 450
     }
   ]
   

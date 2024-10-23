@@ -20,12 +20,12 @@ const SingleFoosCard = ({rescpis, handleFoodDitails}) => {
                <div className="flex gap-6">
                 <div className="font-bold">
                 <i className="fa-regular fa-clock"></i>
-                <span className="ml-3">{preparing_time}</span>
+                <span className="ml-3">{preparing_time} Min .</span>
                
                 </div>
                 <div className="font-bold">
                 <i className="fa-solid fa-fire"></i>        
-                <span className="ml-3">{calories}</span>
+                <span className="ml-3">{calories} Calories.</span>
                 </div>
                </div>
                <div className="card-actions">

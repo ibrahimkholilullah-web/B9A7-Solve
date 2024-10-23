@@ -8,6 +8,9 @@ import Recipes from './Components/Recipes/Recipes'
 
 function App() {
   const [foodDitails, setFoodDitails] = useState([])
+  const [preparedRecipe, setPreparedRecipe] = useState([])
+  const [totalTime, setTotalTime] = useState(0)
+  const [totalCalories, setTotalCalories] = useState(0)
   const handleFoodDitails = ditails =>{
     const isExist = foodDitails.find(previewdata => previewdata.recipe_id === ditails.recipe_id);
     if(!isExist){
@@ -18,7 +21,17 @@ function App() {
     }
     
   }
-console.log(foodDitails)
+  const totalTimeAndCalories = (time, calories) =>{
+    setTotalTime(totalTime + time);
+    setTotalCalories(totalCalories + calories);
+  }
+  const handleRemove = id =>{
+    const deleteRecipe = foodDitails.find(recipe => recipe.recipe_id === id);
+
+    const updateQueue = foodDitails.filter(recipe => recipe.recipe_id !== id)
+    setFoodDitails(updateQueue);
+    setPreparedRecipe([...preparedRecipe, deleteRecipe])
+  }
   return (
     <>
       <header>
@@ -29,7 +42,14 @@ console.log(foodDitails)
       <Recipes></Recipes>
       <div className='flex container mx-auto gap-4'>
         <FoodCard handleFoodDitails={handleFoodDitails}></FoodCard>
-        <FoodDetails foodDitails={foodDitails}></FoodDetails>
+        <FoodDetails 
+        totalTimeAndCalories={totalTimeAndCalories} 
+        preparedRecipe={preparedRecipe} 
+        foodDitails={foodDitails} 
+        handleRemove={handleRemove}
+        totalCalories={totalCalories}
+        totalTime={totalTime}
+        ></FoodDetails>
       </div>
       </main>
       
